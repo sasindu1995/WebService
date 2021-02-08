@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmptyTemplateMasterPage.master.cs" Inherits="HRM.EmployeePortal.EmptyTemplateMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   <link rel="stylesheet" type="text/css" href="Css/Style1.css"/>
+
+   <style type="text/css">
+   .RibbonBarItem
+   {
+       padding-left:5px;
+       padding-right:5px
+   }
+   </style>
+   
+    <title>Elcardo Service Management</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="contaner">
+            <div id="backimg">
+                <table width="100%">
+                        <tr>
+                            <td id="header"> </td>
+                             <td>
+                                <img style="margin-top: 3px;height: 75px; text-align: right;" alt="" src="images/Service.png" />
+                             </td>
+                        </tr>
+                    </table>
+                
+                <div id="wrapper">
+                    <div class="contant">
+                        <!-- Contant -->
+                        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                <div id="footer">
+                     <section class="container">
+            <strong>Copyright &copy; 2020 <a href="https://infoxglobal.com/">Infox Global(Pvt)Ltd</a>.</strong> All rights reserved.
+        </section>
+            </div>
+        </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<asp:Label SkinId="FormHeader" href=""  CssClass="formHeadingLeable" runat="server"/>
+<asp:GridView runat="server"  CssClass="GridView" >
+    <RowStyle CssClass="GridViewRowStyle" /> 
+    <HeaderStyle CssClass="GridViewHeader" />
+   <AlternatingRowStyle CssClass="GridViewAlternetRow" />
+ </asp:GridView>
+<asp:TextBox  runat="server" CssClass="textBox"/>
+<asp:TextBox SkinId="textBoxNumeric" runat="server" CssClass="textBoxNumeric"/>
+<asp:Button  runat="server" CssClass="Buttons" />
+<asp:Button SkinId="GridButton" runat="server" CssClass="GridBtn" />
+<asp:Panel  SkinId="PopupPanel" runat="server" CssClass="popstyle"/>
+<asp:DropDownList  runat="server" CssClass="dropdown"/>
+  <asp:TreeView  runat="server" SkinId="treeOrganizationstucture" >
+                <RootNodeStyle CssClass="treerootStyle" />
+                <ParentNodeStyle CssClass="treeparentStyle" />
+                <LeafNodeStyle CssClass="treechildStyle" />
+                <SelectedNodeStyle CssClass="treeactiveStyle"/>
+
+ </asp:TreeView>
+
+ <asp:Image runat="server" CssClass="Userimg"  Height="150px" Width="120px" />
+
+
